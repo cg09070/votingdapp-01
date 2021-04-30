@@ -1,0 +1,121 @@
+/* Styles go here */
+a img {
+	height: 200px;
+	margin: 0 20px;
+	width: 200px;
+}
+
+#admin-div {
+	width: 600px
+}
+
+.bgcolor-election, .bgcolor-contest {
+	background-color: lightblue;
+}
+
+.bgcolor-amendment, .bgcolor-candidate {
+	background-color: dodgerblue;
+}
+
+#circles {
+	margin-top:40px;
+	text-align: center;
+}
+
+.closed-election {
+	width: 260px;
+}
+
+.container-med {
+	max-width: 720px;
+}
+
+.contest-group {
+	display: contents;
+}
+
+#float-right {
+	float: right;
+}
+
+.form-group {
+	background-color: lightblue;
+	padding: 1em 1em;
+}
+
+img {
+	min-width: 200px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.margin-top {
+	margin-top: 25px;
+}
+
+#overflow {
+	overflow: auto;
+}
+
+/* Style the form */
+#regForm {
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+#results-container {
+	margin: auto;
+	width: 540px;
+}
+
+#root {
+	max-width: 1080px;
+}
+
+.sm-icon {
+	height: 15px !important;
+	margin-left: 3px;
+	min-width: auto;
+	vertical-align: top;
+	width: 15px !important;
+}
+
+span {
+	min-width: 300px !important;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+table {
+	margin: auto;
+}
