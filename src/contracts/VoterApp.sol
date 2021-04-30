@@ -63,19 +63,19 @@ contract VoterApp {
 		registerVoter(owner); /// adds the owner as a registered voter
 	}
 	
-	/**
+	/*
 		function does not change the state and is marked as a view
 		checks if the public key address matches that of the owner
-	/*
+	*/
 	function isAdmin() public view returns (address) {
 		return owner; 
 	}
 	
-	/**
+	/*
 		function will only be called from outside the contract and is set as external.
 		function can only be called by the owner
 		all election data is passed to this function to be stored in the appropriate structs
-	/*	
+	*/	
 	function createElection(Election calldata _election, Amendment[] calldata _amendments, Contest[] calldata _contests, Candidate[] calldata _candidates) external onlyOwner {
 		elections[electionCount].electionName = _election.electionName;
 		elections[electionCount].closingDate = _election.closingDate;
@@ -102,9 +102,9 @@ contract VoterApp {
 		}
 	}
 	
-	/**
-		function registers a voter using their public key.
 	/*
+		function registers a voter using their public key.
+	*/
 	function registerVoter(address _voterId) public onlyOwner {
 		voters[_voterId].isRegistered = true;
 		voters[_voterId].voted.push(1000000); // dummy declaration for initialization purposes. '10000000' is used as infinity
@@ -112,10 +112,10 @@ contract VoterApp {
 		voterCount++;
 	}
 	
-	/**
+	/*
 		The only function that any address can access.
 		Votes are passed in and stored in the appropriate structs
-	/*
+	*/
 	function castBallot(uint electionId, uint[] memory amendmentId, int[] memory amendmentVote, int[] memory contestVote) public {
 		for(uint i=0; i<voters[msg.sender].voted.length; i++){
 			require(!(voters[msg.sender].voted[i] == electionId));
@@ -132,19 +132,19 @@ contract VoterApp {
 		voters[msg.sender].voted.push(electionId); /// stores in which election the voter has cast a ballot
 	}
 	
-	/**
+	/*
 		function is only called internally and is declared as private
 		increments the appropriate candidate's vote count by one if the voter made a selection
-	/*
+	*/
 	function votesForCandidate(int _candidateId) private {
 		if(_candidateId >= 0 )
 			candidates[uint256(_candidateId)].voteCount++;
 	}
 	
-	/**
+	/*
 		function is only called internally and is declared as private
 		increments the appropriate amendment's vote count by one if the voter made a selection
-	/*
+	*/
 	function votesForAmendment(uint _amendmentId, int _vote) private {
 		if(_vote >= 0){
 			if(_vote == 1)

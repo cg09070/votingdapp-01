@@ -15,6 +15,14 @@ class Votechart extends Component {
 			setInterval(() => {
 				this.setData()
 			}, 10000);
+		} else {
+			setInterval(() => {
+				this.setState({
+					text: "no open elections found",
+					labels: [],
+					data: []
+				})
+			}, 10000);
 		}
 	}
 	

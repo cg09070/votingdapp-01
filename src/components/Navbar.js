@@ -11,7 +11,7 @@ class Navbar extends Component {
           href="http://localhost:3000"
           rel="noopener noreferrer"
         >
-        	CSCI 7136 Blockchain Voting Application
+        	Blockchain Voting Application
         </a>
 				<ul className="navbar-nav px-3">
 					<li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
