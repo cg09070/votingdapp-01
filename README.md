@@ -1,5 +1,15 @@
 # votingdapp-01
-Development of a blockchain voting application
+Development of a blockchain voting application. This application was initially created using the following online tutorial from [link to dappuniversity](https://www.youtube.com/watch?v=VH9Q2lf2mNo&ab_channel=DappUniversity)
+
+Before downloading this application, please ensure you have the following software installed:
+
+1. [link to Git](https://git-scm.com/)
+2. [link to npm](https://www.npmjs.com/)
+3. [link to truffle](https://www.trufflesuite.com/truffle)
+4. [link to ganache](https://www.trufflesuite.com/ganache)
+5. [link to metamask](https://metamask.io/)
+
+and one of the browsers supported by Metamask. Development was done using Google Chrome and is the suggested browser.
 
 To initialize this application on your local blockchain, from the command line
 
@@ -13,4 +23,4 @@ To initialize this application on your local blockchain, from the command line
 
 At this point the web browser will open the application at http://localhost:3000. you should see the site homepage.
 
-![alt text](https://github.com/cg09070/votingdapp-01/blob/main/home.jpg?raw=true)
+![homepage screenshot](https://github.com/cg09070/votingdapp-01/blob/main/home.jpg?raw=true)
