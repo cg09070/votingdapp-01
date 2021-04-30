@@ -19,8 +19,11 @@ To initialize this application on your local blockchain, from the command line
 4. run Ganache on your computer and create a new Ethereum workspace.
 5. Give it a desired name and add project by navigating to truffle-config.js in the project folder
 6. on the server tab, change the port to 8545 and click save workspace
-7. from the command line run: npm start
+7. from the command line run: truffle migrate
+8. from the command line run: npm start
 
 At this point the web browser will open the application at http://localhost:3000. you should see the site homepage.
 
 ![homepage screenshot](https://github.com/cg09070/votingdapp-01/blob/main/home.jpg?raw=true)
+
+Finally, import the first Ganache account to Metamask to access the admin, vote, and results pages.
